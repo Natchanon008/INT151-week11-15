@@ -1,0 +1,37 @@
+week 12
+
+Asynchronous Vs. Synchronous
+Synchronous -> คือการทำงานตามลำดับ จะเริ่มเฉพาะตอนที่มีงานก่อนหน้าอยุแล้ว
+Asynchronous -> คือการรทำงานแบบไม่ต้องรอ สั่งให้ทำอย่างอื่นก่อนแล้วไปทำงานอย่างอื่นจะแจ้งกับมาผ่าน callback, promise, async-await 
+
+promise เป็น class หรือ object ที่เป็น Asynchronous
+มี 3 สถานะ: pending → fulfilled หรือ pending → rejected
+ทุกครั้งที่return เป็น promise จะได้เป็น pending กลับมา และเมื่อทำงานจนเสร็จสิ้นจะได้ผลลัพธ์เป็น fulfilled(สำเร็จ) หรือ rejected(ผิดปกติ)
+
+RESTAPI -> รูปแบบการติดต่อระหว่างเครื่องผ่าน http protocol สามารถ request ไปได้ว่าจะ CRUD ยังไง ส่วนใหญ่มักใช้json ในการส่งข้อมูล
+JSON เป็น sting != javascipt object แค่คล้ายเฉยๆ PROP ต้องใส่ "" เท่านั้น value เป็นได้แค่ array object string boolean number ห้ามเป็น func, method
+
+THREE RESTAPI
+request --> จะใช้ CRUD ยังไง ส่งผ่าน http protocol
+response --> มี response ตอบกลับ
+headers --> cookie ตอบกลับ
+
+FETCH FUNCTION -> การติดต่อขอresource ในการเรียก URL เป็น init option ถ้าไม่ใส่ option ใดๆ = GET
+fetch(resource [ ,init])
+json function ไปตัด json string แล้ว convert เป็น javascipt Object
+
+JSON SERVER -> เป็น fake backend แต่ไม่ implement ต้องการ JSON FILE เพื่อทำเป็น endpoint
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+week 13
+
+CRUD 
+ขั้นที่ 1: Frontend เรียกฟังก์ชัน → ฟังก์ชันส่ง request ไปหา API
+ขั้นที่ 2: fetch() ส่ง request ไปที่ Backend
+ขั้นที่ 3: Backend (Node/Express หรือ API อื่น ๆ) รับ request
+ขั้นที่ 4: Database ทำงานจริง
+ขั้นที่ 5: Backend ส่งผลลัพธ์กลับไปให้ Frontend
+ขั้นที่ 6: Frontend นำผลลัพธ์ไปแสดงใน UI
+
+ผมนำตัวweek12-13 มารวมกันเพราะเป็นการทำpractice ต่อกันเลย
