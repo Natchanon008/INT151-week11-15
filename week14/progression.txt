@@ -1,0 +1,21 @@
+การสร้าง Object มีหลากหลายแบบได้แก่
+
+//1. input parameter - empty
+const today1 = new Date()
+console.log(today1) //2025-11-19T02:30:53.178Z
+
+//2. input parameter - number of millisecond
+const now = new Date(Date.now()) //Date.now() - return millisecond
+console.log(now)
+
+//3. input parameter - date string
+const myDate1 = new Date("2025-05-02T18:15:36.100")
+console.log(myDate1)
+
+//4. input parameter - year, monthIndex(0-11), day ,hh, mm, ss, ms
+const myDate3 = new Date(2025, 1, 2, 17, 15, 0, 150)
+
+และมีการจัดFormatต่างๆเช่นString ISOString LocaleString Intl.DateTimeFormat
+อีกทั้งยังมีการcompare เวลา สามารถเขียนให้บอกเวลาไหนมากกว่าหรือน้อยกว่า เท่ากันได้
+
+ื
