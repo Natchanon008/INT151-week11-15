@@ -18,4 +18,4 @@ const myDate3 = new Date(2025, 1, 2, 17, 15, 0, 150)
 และมีการจัดFormatต่างๆเช่นString ISOString LocaleString Intl.DateTimeFormat
 อีกทั้งยังมีการcompare เวลา สามารถเขียนให้บอกเวลาไหนมากกว่าหรือน้อยกว่า เท่ากันได้
 
-ื
+ืในส่วนของself practice ผมให้chatgpt generate html มาให้ และให้สร้างเป็นปุ่มที่กดแล้วจะมีdialog ขึ้น พร้อมโชว์เวลาที่กด
